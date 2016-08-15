@@ -9,3 +9,4 @@ $url="http://202.61.43.53/cfms-hc-search/cases/search-result?CasesSearch%5BCASEN
 $html = scraperWiki::scrape( $url );
 $dom = new simple_html_dom();
 $dom->load($html);
+?>
