@@ -10,7 +10,7 @@ $html = scraperwiki::scrape("http://202.61.43.53/cfms-hc-search/cases/search-res
 // // Find something on the page using css selectors
  $dom = new simple_html_dom();
  $dom->load($html);
- print_r($dom->find("table.list"));
+ print_r($dom);
 //
 // // Write out to the sqlite database using scraperwiki library
 // scraperwiki::save_sqlite(array('name'), array('name' => 'susan', 'occupation' => 'software developer'));
